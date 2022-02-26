@@ -1,6 +1,4 @@
 
-
-
 function updateProductNumber(product ,price, isIncreasing){
     let productInput = document.getElementById(product + '-number');
     let productNumber = parseInt(productInput.value);
@@ -22,9 +20,6 @@ function updateProductNumber(product ,price, isIncreasing){
     // sub total count 
 
     calculateTotal();
-
-
-
 }
 
 function getInputValue(product){
@@ -55,8 +50,6 @@ document.getElementById('phone-plus').addEventListener('click',function(){
     updateProductNumber('phone',1219,false);
  })
 
-
-
 // handle case increase decress events 
 document.getElementById('case-plus').addEventListener('click',function(){
    updateProductNumber('case',59,true);
@@ -66,7 +59,6 @@ document.getElementById('case-minus').addEventListener('click',function(){
 
   updateProductNumber('case',59,false);
 })
-
 
 // delete item 
 
@@ -81,5 +73,4 @@ function deleteMe(itemNumber){
     }
     
     // console.log(e);
-
 }
